@@ -1,0 +1,67 @@
+@import '../../../../styles/colors.scss';
+
+.recordings-detail-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.recording-info {
+  margin-top: 1.5em;
+}
+
+.recording-info-date {
+  font-weight: 400;
+  margin: 0;
+  color: $gray;
+}
+
+.recording-info-description {
+  font-weight: 400;
+  margin-bottom: 0;
+  margin-top: 0.25em;
+}
+
+.recording-info-device-icon {
+  font-size: 1.65em !important;
+}
+
+.recording-info-connectivity {
+  margin-top: 1em !important;
+  margin-bottom: 0.75em !important;
+  border-radius: 100px !important;
+}
+
+.recording-info-connectivity .bar  {
+  border-radius: 100px !important;
+}
+
+.recording-info-label {
+  margin-top: 0.5em !important;
+  font-weight: 400;
+  color: $gray;
+}
+
+.recording-info-meta {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.recording-info-meta div {
+  margin-top: 1em;
+  margin-right: 1em;
+  padding: 1em 1.5em;
+  box-shadow: 0px 0px 10px 3px $medium-gray;
+  border-radius: 10px;
+  min-width: 100px;
+}
+
+.recording-info-meta-value {
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.recordings-detail-table-container {
+  overflow: auto;
+  display: flex;
+  max-height: 50vh;
+}

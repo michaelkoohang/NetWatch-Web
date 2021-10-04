@@ -1,0 +1,17 @@
+
+.recordings-container {
+  padding: 2em 3em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-width: 800px;
+}
+
+.export-csv {
+  display: none;
+}
+
+.export-json {
+  display: none;
+}

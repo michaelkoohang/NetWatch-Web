@@ -1,0 +1,70 @@
+
+@import '../../../styles/colors.scss';
+
+// Team Card
+
+.team-card {
+  width: 225px;
+  margin: 1.5em;
+  padding: 2em 1em;
+  text-align: center;  
+  background-color: white;
+  border-radius: 40px;
+  box-shadow: 0px 0px 20px 3px rgba($color: black, $alpha: 0.08);
+}
+
+.team-headshot {
+  width: 90px;
+  height: 90px;
+  border-radius: 45px;
+  border: 5px solid $black;
+}
+
+.team-name {
+  margin: 0;
+  padding: 0.25em 0;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.team-position {
+  margin: 0;
+  padding-bottom: 0.25em 0;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.team-affiliation {
+  margin: 0;
+  padding-bottom: 1.5em;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.team-email {
+  padding: 0.5em 2em;
+  height: 30px;
+  border-radius: 15px;
+  background-color: $black;
+  color: white;
+  cursor: pointer;
+}
+
+.team-email:hover {
+  color: white;
+  opacity: 0.8;
+}
+
+// Media Queries
+
+// @media (max-width: 767px) { 
+//   .team-card:nth-child(2) {
+//     margin-top: 50px;
+//   }
+// }
+
+// @media (max-width: 991px) { 
+//   .team-card:nth-child(3) {
+//     margin-top: 50px;
+//   }
+// }

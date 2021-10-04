@@ -1,0 +1,20 @@
+
+.recordings-home-header {
+  display: flex;
+}
+
+.recordings-home-title {
+  font-weight: 400;
+  margin-bottom: 0;
+  flex: 1;
+}
+
+.recordings-home-table-container {
+  margin-top: 1.5em;
+  overflow-x: scroll;
+  display: flex;
+}
+
+.recordings-home-table-cell:hover {
+  cursor: pointer;
+}

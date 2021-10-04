@@ -1,0 +1,57 @@
+@import '../../styles/colors.scss';
+
+// Footer
+
+.footer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 3em;
+  margin: auto;
+  border-top: 1px solid $medium-gray;
+}
+
+.footer-links {
+  margin-left: 3em;
+}
+
+.footer-text {
+  margin: 0;
+  color: $gray;
+  font-size: 14px;
+}
+
+.footer-link {
+  color: $blue;
+  font-size: 14px;
+  font-weight: 500;
+  display: block;
+}
+
+.footer-link:hover {
+  color: $blue;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+// Media Queries
+
+@media (max-width: 576px) {
+  .footer { 
+    max-width: 576px; 
+    flex-direction: column;
+    justify-content: center;
+  }
+  .footer-links {
+    margin-left: 0;
+    margin-top: 1em;
+  }
+}
+
+@media (min-width: 768px) { 
+  .footer { max-width: 768px; }
+}
+
+@media (min-width: 992px) { 
+  .footer { max-width: 992px; }
+}

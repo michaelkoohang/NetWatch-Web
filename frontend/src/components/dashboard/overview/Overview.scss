@@ -1,0 +1,44 @@
+
+@import '../../../styles/colors.scss';
+
+.overview {
+  .green {
+    color: $green
+  }
+
+  .blue {
+    color: $blue
+  }
+
+  .red {
+    color: $red;
+  }
+}
+
+.overview-header {
+  display: flex;
+  justify-content: center;
+}
+
+.overview-title {
+  flex: 1;
+  margin: 0;
+  font-weight: 400;
+}
+
+.overview-heading {
+  flex: 1;
+  font-size: 21px;
+  font-weight: 400;
+}
+
+.overview-grid {
+  margin-top: 1em !important;
+}
+
+.overview-totals {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

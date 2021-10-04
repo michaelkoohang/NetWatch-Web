@@ -1,0 +1,79 @@
+
+@import '../../styles/colors.scss';
+
+.data {
+  display: flex;
+}
+
+.side-panel {
+  width: 225px;
+  background-color: $black;
+  height: 100vh;
+  position: sticky;
+}
+
+.side-panel-header {
+  display: flex;
+  align-items: center;
+  padding: 2em 2em 0 2em;
+  color: $white;
+}
+
+.side-panel-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.side-panel-title {
+  margin: 0;
+  margin-left: 0.75em;
+  font-weight: 400;
+  margin-top: 0.1em;
+}
+
+.side-panel-nav {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+}
+
+.side-panel-heading {
+  color: $medium-gray;
+  font-weight: 400;
+  padding: 0 2em;
+}
+
+.side-panel-link {
+  margin: 0em 1em;
+  padding: 0.7em 1em;
+  text-align: left;
+  border-radius: 10px;
+  border: 0;
+  color: $gray;
+  background-color: transparent;
+  font-size: 16px;
+  font-family: 'Work Sans';
+}
+
+.side-panel-link:hover {
+  color: $white;
+  background-color: $dark-gray;
+  cursor: pointer;
+}
+
+.main-panel {
+  flex: 1;
+  position: relative;
+  background-color: $white;
+  overflow-y: scroll;
+  overflow-x: scroll;
+}
+
+.dash-container {
+  padding: 2em 3em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-width: 800px;
+}

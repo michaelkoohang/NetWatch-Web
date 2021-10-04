@@ -1,0 +1,85 @@
+
+@import '../../styles/colors.scss';
+
+// Home
+
+.download {
+  padding-top: 3em;
+}
+
+// Header
+
+.download-header { 
+  display: flex; 
+}
+
+.download-header-content { 
+  padding-right: 2em; 
+}
+
+.download-header-logo { 
+  width: 100px; 
+}
+
+.download-title {
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.download-text {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.download-button {
+  width: auto;
+  height: 50px;
+  margin-right: 1em;
+}
+
+.download-button:hover {
+  cursor: pointer;
+}
+
+.signup-button {
+  border: none;
+  outline: none;
+  background-color: $blue;
+  color: white;
+  padding: 0.5em 0.75em;
+  margin-bottom: 1em;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  height: 45px;
+  width: 100px;
+  font-family: 'Work Sans';
+}
+
+// Media Queries
+
+@media (max-width: 768px) {
+  .download {
+    padding-top: 1em;
+  }
+  .download-header { 
+    text-align: center; 
+    flex-direction: column;
+  }
+  .download-header-content {
+    padding: 0;
+  }
+  #android-button {
+    margin: 0 0.5em 0 0;
+  }
+  #ios-button {
+    margin: 0 0 0 0.5em;
+  }
+  .download-button {
+    margin: 0.5em;
+  }
+  .download-phone { 
+    margin: auto; 
+    margin-top: 3em;
+  }
+}

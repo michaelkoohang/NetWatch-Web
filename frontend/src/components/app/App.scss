@@ -1,0 +1,45 @@
+
+@import '../../styles/colors.scss';
+
+.container {
+  padding: 3em;
+  margin: auto;
+}
+
+.link-blue {
+  color: $blue;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.link-blue:hover {
+  opacity: 0.8;
+  color: $blue;
+  cursor: pointer;
+}
+
+.link-green {
+  color: $green;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.link-green:hover {
+  opacity: 0.8;
+  color: $green;
+  cursor: pointer;
+}
+
+@media (min-width: 576px) {
+  .container { max-width: 576px; }
+}
+
+@media (min-width: 768px) { 
+  .container { max-width: 768px; }
+}
+
+@media (min-width: 992px) { 
+  .container { max-width: 992px; }
+}
+
+@media (min-width: 1200px) { }

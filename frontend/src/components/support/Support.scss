@@ -1,0 +1,24 @@
+
+@import '../../styles/colors.scss';
+
+// Support
+
+.support {
+  padding-top: 3em;
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+  }
+}
+
+.support-logo {
+  width: 100px;
+}
+
+// Media Queries
+
+@media (max-width: 576px) {
+  .support {
+    padding-top: 1em;
+  }
+}

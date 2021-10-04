@@ -1,0 +1,27 @@
+@import '../../../../styles/colors.scss';
+
+.donut-chart {
+  box-shadow: 0px 0px 10px 5px $medium-gray;
+  border-radius: 10px;
+  padding: 2em;
+  min-height: 300px;
+}
+
+.donut-error {
+  text-align: center;
+}
+
+.donut-error-animation {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.donut-error-title {
+  font-weight: 400;
+  margin-bottom: 0.25em;
+}
+
+.donut-error-text {
+  font-size: 18px;
+  color: $gray;
+}

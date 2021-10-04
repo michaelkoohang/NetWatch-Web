@@ -1,0 +1,24 @@
+
+@import '../../styles/colors.scss';
+
+// Privacy
+
+.privacy {
+  padding-top: 3em;
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+  }
+}
+
+.privacy-logo {
+  width: 100px;
+}
+
+// Media Queries
+
+@media (max-width: 576px) {
+  .privacy {
+    padding-top: 1em;
+  }
+}

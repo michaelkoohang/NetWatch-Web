@@ -1,0 +1,22 @@
+
+.screenshot-photos {
+  width: 225px;
+  height: 445px;
+  display: inline-block;
+}
+
+.screenshots {
+  position: relative;
+  height: 450px;
+  min-width: 225px;
+  text-align: center;
+  margin-top: 2em;
+}
+
+.screenshot-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
