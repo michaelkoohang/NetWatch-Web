@@ -27,7 +27,7 @@ afterAll(done => {
   db.query("DELETE FROM recordings;");
   db.query("DELETE FROM features;");
   db.query("DELETE FROM devices;");
-  db.query("ALTER TABLE hikes AUTO_INCREMENT = 1;");
+  db.query("ALTER TABLE recordings AUTO_INCREMENT = 1;");
   db.query("ALTER TABLE features AUTO_INCREMENT = 1;");
   db.query("ALTER TABLE devices AUTO_INCREMENT = 1;");
   db.end()

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Transition } from 'semantic-ui-react';
-import RecordingsHome from './RecordingsHome/RecordingsHome';
-import RecordingsDetail from './RecordingsDetail/RecordingsDetail';
+import RecordingsHome from './recordingsHome/RecordingsHome';
+import RecordingsDetail from './recordingsDetail/RecordingsDetail';
 import './Recordings.scss';
 
 export default function Recordings() {

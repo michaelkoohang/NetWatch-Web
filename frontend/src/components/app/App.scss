@@ -6,27 +6,15 @@
   margin: auto;
 }
 
-.link-blue {
-  color: $blue;
+.link {
+  color: $black;
   font-size: 14px;
   font-weight: 500;
 }
 
-.link-blue:hover {
+.link:hover {
   opacity: 0.8;
-  color: $blue;
-  cursor: pointer;
-}
-
-.link-green {
-  color: $green;
-  font-size: 14px;
-  font-weight: 500;
-}
-
-.link-green:hover {
-  opacity: 0.8;
-  color: $green;
+  color: $black;
   cursor: pointer;
 }
 

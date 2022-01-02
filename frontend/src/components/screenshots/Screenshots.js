@@ -2,14 +2,14 @@ import React, { useEffect, useState } from 'react'
 import { map } from 'lodash';
 import { Transition } from 'semantic-ui-react';
 import netwatchRecord from '../../res/img/app/netwatch-record-ss.png';
-import netwatchHikes from '../../res/img/app/netwatch-hikes-ss.png';
+import netwatchRecordings from '../../res/img/app/netwatch-recordings-ss.png';
 import netwatchDetail from '../../res/img/app/netwatch-detail-ss.png';
 import './Screenshots.scss';
 
 export default function Screenshots() {
 
   const [currentImage, setCurrentImage] = useState(0);
-  const images = [netwatchRecord, netwatchHikes, netwatchDetail];
+  const images = [netwatchRecord, netwatchRecordings, netwatchDetail];
 
   useEffect(() => {
     const interval = setInterval(() => {

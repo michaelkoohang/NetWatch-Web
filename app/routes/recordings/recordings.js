@@ -38,7 +38,7 @@ router.post('/recordings', (req, res) => {
       .then(data => res.status(200).json(data))
       .catch(err => utils.handleError(err, req, res));
   } else {
-    res.status(400).json({success: 0, data: "no hike data found or missing device id in headers"});
+    res.status(400).json({success: 0, data: "no recording data found or missing device id in headers"});
   }
 });
 

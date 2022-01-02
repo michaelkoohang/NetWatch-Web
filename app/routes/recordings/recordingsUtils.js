@@ -92,7 +92,7 @@ module.exports = {
       .then(insertResult => module.exports.insertFeatures(recording.features, insertResult.insertId));
   },
   
-  // Insert all features for a particular hike
+  // Insert all features for a particular recording
   insertFeatures: (features, id) => {
     let new_values = [];
     for (let i = 0; i < features.length; i++) {

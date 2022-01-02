@@ -3,7 +3,7 @@ import { Button, Dropdown, Grid, Icon, Progress, Table } from 'semantic-ui-react
 import { keys, map, sortBy } from 'lodash';
 import { CSVLink } from 'react-csv';
 import NetworkMap from '../../maps/networkMap/NetworkMap';
-import './RecordingDetail.scss';
+import './RecordingsDetail.scss';
 import { 
   getRecordingDate, 
   getRecordingDescription, 

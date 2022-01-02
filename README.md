@@ -19,10 +19,10 @@ Before working with databases, I highly recommend applying for a [JetBrains Educ
 
 Once you have it installed, open your terminal. We're going to create a new database user you'll need for accessing the database. The `<>` characters denote values where you should insert your own information.
 1. Start a MySQL session: `mysql`
-2. Create a new database: `create database hikernet_db;`
-3. Use that database: `use hikernet_db;`
+2. Create a new database: `create database netwatch_db;`
+3. Use that database: `use netwatch_db;`
 4. Create a new user: `create user '<username>'@'localhost' identified by '<password>';`
-5. Grant privileges to that user: `grant all privileges on hikernet_db.* to '<username>'@'localhost';`
+5. Grant privileges to that user: `grant all privileges on netwatch_db.* to '<username>'@'localhost';`
 
 Now that you've created a new database, along with a user that has access to it, you can use this to connect to the database. Switch to your IDE of choice and create a new connection. For DataGrip, you can click the `+ > Data Source > MariaDB` on the left side panel to create a new connection. Enter your credentials and click `Ok`. You're now connected to your database!
 

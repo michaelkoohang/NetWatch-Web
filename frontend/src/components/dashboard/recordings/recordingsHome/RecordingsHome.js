@@ -24,19 +24,19 @@ export default function RecordingsHome(props) {
 
   const csvLink = useRef(null);
   const jsonLink = useRef(null);
-  const [state, dispatch] = useReducer(hikeReduce, initialState);
+  const [state, dispatch] = useReducer(recordingReduce, initialState);
   const OMITTED_HEADERS = new Set(['checked', 'features']);
 
   useEffect(() => {
     fetch('/api/dash/recordings')
       .then(response => response.json())
       .then(data => {
-        map(data, hike => hike.checked = false);
+        map(data, recording => recording.checked = false);
         setTimeout(() => dispatch({ type: ACTIONS.LOAD, payload: data }), 500);
       });
   }, []);
 
-  function hikeReduce(state, action) {
+  function recordingReduce(state, action) {
     switch (action.type) {
       case ACTIONS.LOAD:
         return {
@@ -70,9 +70,9 @@ export default function RecordingsHome(props) {
         return {
           ...state,
           allChecked: action.checked,
-          data: map(state.data, hike => {
+          data: map(state.data, recording => {
             return {
-              ...hike,
+              ...recording,
               checked: action.checked
             };
           })
@@ -90,8 +90,8 @@ export default function RecordingsHome(props) {
     jsonLink.current.click();
   }
 
-  function selectHike(data) {
-    props.setHikeDetails(data);
+  function selectRecording(data) {
+    props.setRecordingDetails(data);
     props.showDetails(true);
   }
 
@@ -121,7 +121,7 @@ export default function RecordingsHome(props) {
               <CSVLink 
                 className='export-csv' 
                 data={ makeCSVData(filter(state.data, {checked: true})) } 
-                download='hikernet-export.csv' 
+                download='netwatch-export.csv' 
                 ref={csvLink} />
             </Dropdown.Item>
             <Dropdown.Item onClick={() => downloadJSON()}>
@@ -130,7 +130,7 @@ export default function RecordingsHome(props) {
                 className='export-json' 
                 ref={jsonLink} 
                 href={`data:text/json;charset=utf-8,${encodeURIComponent(JSON.stringify(makeJSONData(filter(state.data, {checked: true}))))}`} 
-                download='hikernet-export.json'>
+                download='netwatch-export.json'>
                   GeoJSON
               </a>
             </Dropdown.Item>
@@ -162,7 +162,7 @@ export default function RecordingsHome(props) {
                 </Table.Row>
               </Table.Header>
               <Table.Body>
-                { map(state.data, (hike, i) => {
+                { map(state.data, (recording, i) => {
                     return <Table.Row key={i} positive={state.data[i].checked}>
                       <Table.Cell>
                         <Checkbox 
@@ -170,12 +170,12 @@ export default function RecordingsHome(props) {
                           onChange={() => dispatch({ type: ACTIONS.CHECK, cellIndex: i, checked: !state.data[i].checked})}
                         />
                       </Table.Cell>
-                      { map(hike, (val, key) => {
+                      { map(recording, (val, key) => {
                           if (!OMITTED_HEADERS.has(key)) {
                             return <Table.Cell 
                                     className='recordings-home-table-cell' 
                                     key={key} 
-                                    onClick={() => selectHike(hike)}>
+                                    onClick={() => selectRecording(recording)}>
                                       {formatCell(val)}
                                     </Table.Cell>
                           }

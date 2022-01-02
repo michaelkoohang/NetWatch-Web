@@ -4,7 +4,7 @@ import Footer from '../footer/Footer';
 import TeamCard from './teamCard/TeamCard'
 import { Icon } from 'semantic-ui-react';
 import netwatchRecord from '../../res/img/app/netwatch-record-ss.png';
-import netwatchView from '../../res/img/app/netwatch-hikes-ss.png';
+import netwatchView from '../../res/img/app/netwatch-recordings-ss.png';
 import netwatchAnalyze from '../../res/img/app/netwatch-detail-ss.png';
 import bea from '../../res/img/headshots/bea.jpg';
 import michael from '../../res/img/headshots/michael.jpg';
@@ -83,27 +83,6 @@ export default function Home() {
     ]
   }
 
-  const features = [
-    {
-      title: 'Record',
-      icon: 'wifi',
-      description: 'Record your connectivity while walking. Just hit start to begin and stop whenever you\'re done. It\'s that easy.',
-      image: netwatchRecord
-    },
-    {
-      title: 'View',
-      icon: 'eye',
-      description: 'View your connectivity data, including your total connectivity status. See everything at a glance, and more.',
-      image: netwatchView
-    },
-    {
-      title: 'Analyze',
-      icon: 'search',
-      description: 'Analyze your connectivity on a map. Find where you did and didn\'t have a connection. Cool, right? We think so too.',
-      image: netwatchAnalyze
-    }
-  ]
-
   return (
     <div className="home">
       <div className="header container">
@@ -117,23 +96,9 @@ export default function Home() {
             Download the app now to start measuring!
           </p>
           <a className="header-button" href="#/download">Download</a>        
-          <a className="header-link link-blue"href="#/privacy">See privacy policy</a>
-          <a className="header-link link-blue"href="#/terms">See terms and conditions</a>
-          <a className="header-link dashboard-link link-green" href="#/dashboard">Dashboard</a>
-        </div>
-        <Screenshots/>
-      </div>
-      <div className='features'>
-        <h1 className="features-title">Features</h1>
-        <div className='features-row'>
-          { map(features, (feature, i) => (
-              <div className='feature' key={i}>
-                <h2><Icon name={feature.icon}/> {feature.title}</h2>
-                <p className='text'>{feature.description}</p>
-                <img src={feature.image} key={i} className="feature-screenshot" alt="NetWatch screenshot"/>
-              </div>
-            ))
-          }
+          <a className="header-link link"href="#/privacy">See privacy policy</a>
+          <a className="header-link link"href="#/terms">See terms and conditions</a>
+          <a className="header-link dashboard-link link" href="#/dashboard">Dashboard</a>
         </div>
       </div>
       <div className="team">

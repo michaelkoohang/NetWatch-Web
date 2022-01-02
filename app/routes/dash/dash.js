@@ -3,7 +3,7 @@ const router = express.Router();
 const dashUtils = require('./dashUtils');
 const utils = require('../utils');
 
-// Get all hikes for the dashboard
+// Get all recordings for the dashboard
 router.get('/recordings', utils.authenticateToken, (req, res) => {
   dashUtils.getRecordings()
     .then(data => {
